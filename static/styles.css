@@ -1,0 +1,228 @@
+:root {
+  --progressBar: rgb(19, 97, 161);
+  --primary: rgb(19, 97, 161);
+  --shadow: rgb(231, 230, 230);
+}
+
+body {
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+button {
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+
+button.inverted {
+  border: 1px solid #ccc;
+  color: var(--primary);
+  background: transparent;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+
+.page > * {
+  padding: 0 20vw;
+}
+
+.page > .hbar {
+  padding: none;
+}
+
+.hbar {
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--shadow);
+}
+
+.free-quote {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.free-quote>form> fieldset > label {
+  margin: 1rem 0;
+  
+}
+
+nav {
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px 0px var(--shadow);
+  padding-bottom: 1px;
+  position: fixed;
+  top: 0;
+  left: -1;
+  width: calc(100vw + 1px);
+  z-index: 9;
+  background: white;
+}
+
+nav>span.nav-item {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.1s;
+  height: 100%;
+  min-width: 5rem;
+  padding: 0 .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+}
+
+nav>span.nav-item>* {
+  margin: 0 3px;
+}
+
+nav>span.nav-item:hover {
+  transform: scale(1.05);
+}
+
+nav>span.nav-item.is-active {
+  color: var(--shadow);
+  border-bottom: 3px solid var(--primary);
+}
+
+nav>span.nav-item.is-active:hover {
+  transform: none;
+}
+
+/* Overrides default styled accordion styles (too much bottom padding) */
+.ui.styled.accordion .content {
+  margin: 0;
+  padding: 0.5em 1em 0.75em !important;
+}
+
+
+/* Footer ********************/
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: rgb(245, 245, 245);
+  padding: .5rem 0;
+}
+
+#footer>a {
+  margin: 0 10vw;
+}
+
+i {
+  margin-right: 5px;
+}
+
+a {
+  color: inherit;
+}
+
+.head1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../static/assets/head1.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 35vh;
+  max-height: 45vh;
+  width: 100%;
+  color: white;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.img {
+  height: 30vw;
+  width: auto;
+  margin-top: 5vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3vw;
+}
+
+.content {
+  padding: 0 10vw;
+  text-align: center;
+}
+
+.img-logo-small {
+  height: 13vh;
+  width: auto;
+}
+
+.foot {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.warn {
+  background: rgb(245, 29, 29);
+  border: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .img {
+    width: 60vw;
+    height: auto;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .order-0 {
+    order: -1;
+  }
+}
