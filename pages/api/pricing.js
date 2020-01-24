@@ -1,4 +1,4 @@
-import Product from '../../models/Pricing';
+import Pricing from '../../models/Pricing';
 
 export default async (req, res) => {
     switch (req.method) {
@@ -16,12 +16,13 @@ export default async (req, res) => {
 
 async function handleGetRequest(req, res) {
     const { _id } = req.query;
-    const product = await Product.findOne({ _id });
-    res.status(200).json(product);
+    const pricing = await Pricing.findOne({ _id });
+    res.status(200).json(pricing);
 }
 
 async function handleDeleteRequest(req, res) {
     const { _id } = req.query;
-    await Product.findOneAndDelete({ _id });
+    await Pricing.findOneAndDelete({ _id });
     res.status(204).json({});
 }
+

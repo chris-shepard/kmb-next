@@ -3,7 +3,7 @@ import shortid from 'shortid';
 
 const { String, Number } = mongoose.Schema.Types;
 
-const ProductSchema = new mongoose.Schema({
+const PricingSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -23,4 +23,4 @@ const ProductSchema = new mongoose.Schema({
     },
 })
 
-export default mongoose.models.Product || mongoose.model("Product", ProductSchema);
+export default mongoose.models.Pricing || mongoose.model("Pricing", PricingSchema);

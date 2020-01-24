@@ -15,7 +15,7 @@ function Home() {
 <div className="container animated slideInRight">
   <div className="flex ">
     <div className="">
-      <img src="../static/assets/shea2.jpg" className="img"/>
+      <img src="../static/assets/shea2.jp2" alt="Owner, Shea, and Family." className="img"/>
     </div>
     <div className="content order-0">
 
@@ -25,7 +25,7 @@ function Home() {
         local real estate conditions. Based on our client's needs and interest, we have found success in fulfilling our
         client's vision for their exterior property improvements, with landscaping and hardscaping surfaces.
       </p>
-      <img src="../static/assets/kmb-logo.PNG" className="img-logo-small"/>
+      <img src="../static/assets/kmb-logo.jp2" className="img-logo-small" alt="KMB's logo"/>
       <p>
         Owner, Shea DeLola, founded the company based on the concept of turning our client's current properties into
         their dream properties, and helping them turn their landscape dreams into a reality.

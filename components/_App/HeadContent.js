@@ -5,7 +5,7 @@ export default () => (
       content="minimum-scale=1, initial-scale=1, width=device-width"
     />
     <meta charSet="utf-8" />
-
+    <meta name="Description" content="KMB Property Solutions is a Landscaping company located in Rochester, NY"/>
     <link
       rel="apple-touch-icon"
       sizes="180x180"

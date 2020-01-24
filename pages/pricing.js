@@ -1,7 +1,9 @@
 import Bar from "../components/Shared/Bar";
-import ProductList from "../components/Pricing/ProductList";
-import baseUrl from "../utils/baseUrl";
-import axios from "axios";
+import React from 'react';
+import axios from 'axios';
+import baseUrl from '../utils/baseUrl';
+import PricingList from "../components/Pricing/PricingList";
+
 
 function Pricing() {
   return (
@@ -14,14 +16,14 @@ function Pricing() {
   );
 }
 
-/*
 Pricing.getInitialProps = async () => {
   //fetch data on server
   //return response data as object
-  const url = `${baseUrl}/api/products`;
+  const url = `${baseUrl}/api/pricing`;
   const response = await axios.get(url);
-  return {products: response.data};
+  console.log(repsonse.data)
+  return {pricing: response.data};
+  
   // note: this object will be merged with existing props
 }
-*/
 export default Pricing;

@@ -161,7 +161,8 @@ a {
 }
 
 .head1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../static/assets/head1.jpeg');
+  background: rgb(114, 109, 109);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../static/assets/rsz_1head1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -203,7 +204,7 @@ a {
 }
 
 .warn {
-  background: rgb(245, 29, 29);
+  background: rgba(243, 77, 65, 0.863);
   border: none;
   color: white;
   margin-top: 1rem;
